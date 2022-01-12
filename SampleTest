@@ -1,0 +1,86 @@
+public class KevinSample {
+
+public static void main(String[] args) {
+
+System.out.println("Hello World");
+
+// Variables, Data Types
+
+int myFirstNumber = (5 + 10) + (2 * 10);
+int mySecondNumber = 12;
+int myThirdNumber = myFirstNumber * 2;
+int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+System.out.println(myTotal);
+int myLastOne = 1000 - myTotal;
+System.out.println(myLastOne);
+
+// Boolean, byte (8), char, short (16), int (32), long, float and double, Primitive Data Types
+
+int myMinIntValue = Integer.MIN_VALUE;
+int myMaxIntValue = Integer.MAX_VALUE;
+System.out.println("Integer Minimum Value = " + myMinIntValue);
+System.out.println("Integer Maximum Value = " + myMaxIntValue);
+System.out.println("Busted MAX value = " +  (myMinIntValue + 1)); //overflow
+System.out.println("Busted MIN Value = " + (myMinIntValue - 1)); //underflow
+
+// Range of Data Types
+
+byte myMinByteValue = Byte.MIN_VALUE;
+byte myMaxByteValue = Byte.MAX_VALUE;
+System.out.println("Busted MAX value = " +  (myMinByteValue + 1)); //overflow
+System.out.println("Busted MIN Value = " + (myMinByteValue - 1)); //underflow
+
+short myMinShortValue = Short.MIN_VALUE;
+short myMaxShortValue = Short.MAX_VALUE;
+System.out.println("Busted MAX value = " +  (myMinShortValue + 1)); //overflow
+System.out.println("Busted MIN Value = " + (myMinShortValue - 1)); //underflow
+
+long myLongValue = 100L;
+long myMinLongValue = Long.MIN_VALUE;
+long myMaxLongValue = Long.MAX_VALUE;
+System.out.println("Busted MAX value = " +  (myMinLongValue + 1)); //overflow
+System.out.println("Busted MIN Value = " + (myMinLongValue - 1)); //underflow
+
+//** Casting in Java **//
+
+int myNewIntTotal = (myMinIntValue / 2);
+byte myNewlyByteValue = (byte)(myMinByteValue / 2);
+short myNewShortValue = (short)(myMinShortValue / 2);
+
+// Always use Int
+
+// Challenge
+
+
+byte mySecondByte = 25;
+short mySecondShort = 23;
+int mySecondInt = 30;
+long mySecondLong = 50000L + 10L * (mySecondByte + mySecondShort + mySecondInt);
+System.out.println(mySecondLong);
+
+
+// Floats 3.14159,   Float and Double
+// Single precision 32. Double precision 64 bits
+
+float myMinFloatValue = Float.MIN_VALUE;
+float myMaxFloatValue = Float.MAX_VALUE;
+System.out.println("Float miniumum value = " + myMinFloatValue);
+System.out.println("Float maximum value = " + myMaxFloatValue);
+
+double myMinDoubleValue = Double.MIN_VALUE;
+double myMaxDoubleValue = Double.MAX_VALUE;
+System.out.println("Double miniumum value = " + myMinDoubleValue);
+System.out.println("Double maximum value = " + myMaxDoubleValue);
+
+
+
+
+
+
+
+
+
+
+
+}
+}
