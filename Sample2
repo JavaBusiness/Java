@@ -1,0 +1,228 @@
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World");
+
+		// Variables, Data Types
+
+		int myFirstNumber = (5 + 10) + (2 * 10);
+		int mySecondNumber = 12;
+		int myThirdNumber = myFirstNumber * 2;
+		int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+		System.out.println(myTotal);
+		int myLastOne = 1000 - myTotal;
+		System.out.println(myLastOne);
+
+		// Boolean, byte (8), char, short (16), int (32), long, float and double,
+		// Primitive Data Types
+
+		int myMinIntValue = Integer.MIN_VALUE;
+		int myMaxIntValue = Integer.MAX_VALUE;
+		System.out.println("Integer Minimum Value = " + myMinIntValue);
+		System.out.println("Integer Maximum Value = " + myMaxIntValue);
+		System.out.println("Busted MAX value = " + (myMinIntValue + 1)); // overflow
+		System.out.println("Busted MIN Value = " + (myMinIntValue - 1)); // underflow
+
+		// Range of Data Types
+
+		byte myMinByteValue = Byte.MIN_VALUE;
+		byte myMaxByteValue = Byte.MAX_VALUE;
+		System.out.println("Busted MAX value = " + (myMinByteValue + 1)); // overflow
+		System.out.println("Busted MIN Value = " + (myMinByteValue - 1)); // underflow
+
+		short myMinShortValue = Short.MIN_VALUE;
+		short myMaxShortValue = Short.MAX_VALUE;
+		System.out.println("Busted MAX value = " + (myMinShortValue + 1)); // overflow
+		System.out.println("Busted MIN Value = " + (myMinShortValue - 1)); // underflow
+
+		long myLongValue = 100L;
+		long myMinLongValue = Long.MIN_VALUE;
+		long myMaxLongValue = Long.MAX_VALUE;
+		System.out.println("Busted MAX value = " + (myMinLongValue + 1)); // overflow
+		System.out.println("Busted MIN Value = " + (myMinLongValue - 1)); // underflow
+
+		// ** Casting in Java **//
+
+		int myNewIntTotal = (myMinIntValue / 2);
+		byte myNewlyByteValue = (byte) (myMinByteValue / 2);
+		short myNewShortValue = (short) (myMinShortValue / 2);
+
+		// Always use Int
+
+		// Challenge
+
+		byte mySecondByte = 25;
+		short mySecondShort = 23;
+		int mySecondInt = 30;
+		long mySecondLong = 50000L + 10L * (mySecondByte + mySecondShort + mySecondInt);
+		System.out.println(mySecondLong);
+
+		// Floats 3.14159, Float and Double
+		// Single precision 32. Double precision 64 bits
+
+		float myMinFloatValue = Float.MIN_VALUE;
+		float myMaxFloatValue = Float.MAX_VALUE;
+		System.out.println("Float miniumum value = " + myMinFloatValue);
+		System.out.println("Float maximum value = " + myMaxFloatValue);
+
+		double myMinDoubleValue = Double.MIN_VALUE;
+		double myMaxDoubleValue = Double.MAX_VALUE;
+		System.out.println("Double miniumum value = " + myMinDoubleValue);
+		System.out.println("Double maximum value = " + myMaxDoubleValue);
+
+		// Doubles are recommended instead of floats
+
+		int myTIntValue = 5 / 3;
+		float myTFloatValue = (float) 5.25 / 3; // specifies to use or use f
+		double myTDoubleValue = 5.25d / 3d; // good habit to use d f etc.
+		System.out.println("myTIntValue " + myTIntValue);
+		System.out.println("myTFloatValue " + myTFloatValue);
+		System.out.println("myTDoubleValue " + myTDoubleValue);
+
+		// Conversions
+
+		double numberOfPounds = 200d;
+		double convertedKilograms = numberOfPounds * 0.45359237d;
+		System.out.println("Converted kilograms= " + convertedKilograms);
+
+		/*
+		 * Alt Up or Down                 Right click Source Generate Getters and Setters 
+		 *  sysout Ctrl + Space            main Ctrl + Space for,           do. while, if, else, Ctrl + Space
+		 * highlight Ctrl + Shift + F (auto clean)      Ctrl + Shift + O (auto imports)       Ctrl + Shift + /
+		 * alt + shift R (change variable name throughout       Ctrl + L (line)       Alt + Shift + M (highlight for new method)
+		 * 
+		 */
+
+		// Char and Boolean Types
+
+		char myChar = 'D'; // menu, store data in a raise, only 1 character 16 bits unicode - symbols
+		char myUnicodeChar = '\u0044';
+		char myCopyWriteChar = '\u00A9';
+		System.out.println(myChar);
+		System.out.println(myUnicodeChar);
+		System.out.println(myCopyWriteChar);
+
+		// Boolean True or False, Yes or No, 1 or 0
+
+		boolean myTrueBooleanValue = true;
+		boolean myFalseBooleanValue = false;
+		
+		boolean isCustomerOverTwentyOne = true;
+		
+		// Mostly used primitive data types - int double and boolean 
+		
+		
+		
+		
+		// String Data Type (not primitive) are immutable
+		
+		String myString = "This is my string";
+		System.out.println("myString is equal to " + myString);
+		myString = myString + ", and this is more. ";
+		myString = myString + " \u00A9 2022";
+		System.out.println("myString is equal to " + myString);
+		String numberString = "250.55"; // text representations only
+		numberString = numberString + "49.95";
+		System.out.println(numberString);
+		String lastString = "10";
+		int myFInt = 50;
+		lastString = lastString + myFInt;
+		System.out.println("LastString is equal to " + lastString);
+		double doubleNumber = 120.47d;
+		lastString = lastString + doubleNumber;
+		System.out.println("LastString is equal to " + lastString);
+
+		/*
+		 * Operators, Operands and Expressions Operator = specific operations on 1, 2, 3
+		 * operands Operands = any object manipulated by an operator // Expression =
+		 * combining variables, literals, method return values and operators
+		 */
+
+		int result = 1 + 2; // 1 + 2 = 3 = assignment operator + additional operator (2 operands)
+		System.out.println("1 + 2 = " + result);
+		int previousResult = result;
+		System.out.println("previousResult = " + previousResult);
+		result = result - 1; // 3 - 1 = 2
+		System.out.println("3 - 1 = " + result);
+		System.out.println("previousResult = " + previousResult);
+
+		result = result * 10; // 2 * 10 = 20
+		System.out.println("2 * 10 = " + result);
+
+		result = result / 5; // 20 / 5 = 4
+		System.out.println("20 / 5 = " + result);
+		
+		result = result % 3; // the remainder of ( 4 % 3) = 1
+		System.out.println("4 % 3 " + result);
+		
+		// Abbreviating Operators
+		
+		// result = result + 1;
+		result++; // 1 + 1 = 2
+		System.out.println("1 + 1 = " + result);
+		
+		result--;
+		System.out.println("2 - 1 = " + result);
+		
+		result += 2; 
+		System.out.println("1 + 2 = " + result);
+		
+		result *= 10;
+		System.out.println("3 * 10 = " + result);
+		
+		result /= 3; 
+		System.out.println("30 / 3 = " + result);
+		
+		result -= 2;
+		System.out.println("10 - 2 = " + result);
+		
+		
+		// if then  and conditional logic
+		
+		boolean isAlien = false;     // asignnment operator
+		if (isAlien == false) {    // no ; - testing if Alien is false
+			System.out.println("It is not an alien");
+			System.out.println("And I am scared of aliens");
+		}	
+		// Always use a code block - more than one statement executed {}
+		
+		int topScore = 100;
+		if (topScore >= 100) {
+			System.out.println("You got the high score");
+		}
+		
+		int secondTopScore = 60;
+		if (topScore > secondTopScore && topScore < 100) { // logical and operator &&
+			System.out.println("Greater than second top score and less than 100");
+		}
+		
+		// Logical OR Operator
+		
+		int secondSTopScore = 95;
+		if ((topScore > secondSTopScore && topScore < 100)) { // logical and operator &&
+			System.out.println("Greater than second top score and less than 100");
+		}
+		
+		// && is the Logical which operators on boolean     || is the Logical OR which operators
+		
+		if ((topScore > 90) || (secondTopScore <= 90)) {
+			System.out.println("Either or both of the conditons are true");
+		}
+		
+		int newValue = 50;
+		if (newValue == 50) {  // dont use = use ==            Common Problem
+			System.out.println("This is the value");
+		}
+		
+		boolean isCar = false; 
+		if (isCar = true) {                   // boolean vs assignment operator
+			System.out.println("This is not suppose to happen");
+		}
+		
+		
+		
+		
+		
+	}
+}
+
